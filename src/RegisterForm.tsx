@@ -61,7 +61,7 @@ function RegisterForm() {
             </Form.Item>
 
             <Form.Item <FieldType>
-                label="Terms and Conditions"
+                label="Membership Type"
                 name="membershipType"
                 rules={[{ required: true, message: 'Please select your membership type!' }]}
             >
