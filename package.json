@@ -24,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "e2e": "npx playwright test",
-    "e2e:ui": "npx playwright test --ui"
+    "e2e:ui": "npx playwright test --ui",
+    "cypress": "npx cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +46,7 @@
     ]
   },
   "devDependencies": {
-    "@playwright/test": "^1.44.0"
+    "@playwright/test": "^1.44.0",
+    "cypress": "^13.9.0"
   }
 }
