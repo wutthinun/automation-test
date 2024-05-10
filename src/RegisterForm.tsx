@@ -36,7 +36,7 @@ function RegisterForm() {
             <Form.Item<FieldType>
                 label="First name"
                 name="firstname"
-                rules={[{ required: true, message: 'Please input your name!' }]}
+                rules={[{ required: true, message: 'Please input your first name!' }]}
             >
                 <Input />
             </Form.Item>
