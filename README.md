@@ -8,6 +8,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Install all the dependencies needed to run the project.
 
+### `npx playwright install`
+
+Install playwright
+
 ## Available Scripts
 
 In the project directory, you can run:
