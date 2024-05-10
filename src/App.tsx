@@ -1,16 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Col, Image, Row } from 'antd';
 import { Outlet } from 'react-router-dom';
-import { Col, Row } from 'antd';
+import './App.css';
+import banner from './cj_qa.png';
 
 function App() {
   return (
-    <Row justify="center" align="middle" style={{margin: '1rem 1rem'}}>
-      <Col span={24}>
-        <Outlet />
-      </Col>
-    </Row>
+    <>
+      <Row justify="center" align="middle" style={{ margin: '1rem 1rem' }}>
+        <Col span={4} >
+          <Image
+            width={200}
+            src={banner}
+          />
+        </Col>
+      </Row>
+      <Row justify="center" align="middle" style={{ margin: '1rem 1rem' }}>
+        <Col span={12}>
+          <Outlet />
+        </Col>
+      </Row>
+    </>
   );
 }
 

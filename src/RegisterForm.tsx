@@ -61,7 +61,7 @@ function RegisterForm() {
             </Form.Item>
 
             <Form.Item <FieldType>
-                label="Select"
+                label="Terms and Conditions"
                 name="membershipType"
                 rules={[{ required: true, message: 'Please select your membership type!' }]}
             >
@@ -86,7 +86,15 @@ function RegisterForm() {
                 name="tnc"
                 valuePropName="checked"
                 wrapperCol={{ offset: 8, span: 16 }}
-                rules={[{ required: true, message: 'Please agree to the terms and conditions!' }]}
+                rules={[
+                    { validator(rule, value, callback) {
+                        if (!value) {
+                            callback('Please agree to the terms and conditions!');
+                        } else {
+                            callback();
+                        }
+                    },}
+                ]}
             >
                 <Checkbox>I agree to the terms and conditions</Checkbox>
             </Form.Item>
