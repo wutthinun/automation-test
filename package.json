@@ -25,7 +25,7 @@
     "eject": "react-scripts eject",
     "playwright": "npx playwright test",
     "playwright:ui": "npx playwright test --ui",
-    "cypress:ui": "npx cypress open"
+    "cypress:ui": "npx cypress open",
     "cypress": "npx cypress run"
   },
   "eslintConfig": {
