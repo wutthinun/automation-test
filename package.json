@@ -23,8 +23,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "e2e": "npx playwright test",
-    "e2e:ui": "npx playwright test --ui",
+    "playwright": "npx playwright test",
+    "playwright:ui": "npx playwright test --ui",
     "cypress": "npx cypress open"
   },
   "eslintConfig": {
