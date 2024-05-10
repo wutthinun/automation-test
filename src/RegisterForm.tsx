@@ -65,7 +65,7 @@ function RegisterForm() {
                 name="membershipType"
                 rules={[{ required: true, message: 'Please select your membership type!' }]}
             >
-                <Select options={[
+                <Select data-cy="membershipType" options={[
                     {
                         label: 'Silver',
                         value: 'Silver'
@@ -100,7 +100,9 @@ function RegisterForm() {
             </Form.Item>
 
             <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                <Button type="primary" htmlType="submit">
+                <Button type="primary" htmlType="submit"
+                id="register_submit"
+                >
                     Submit
                 </Button>
             </Form.Item>
