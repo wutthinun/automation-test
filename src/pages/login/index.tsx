@@ -4,15 +4,16 @@ import {Link, useNavigate} from "react-router-dom";
 
 import "./login.style.css";
 import logo from "src/assets/cj-logo-i.png";
-
+type FormValueType = {
+  userName: string
+  password: string
+}
 function LoginPage() {
   const navigate = useNavigate();
   const [form] = Form.useForm();
   const account = {userName: "admin", password: "password"};
 
-
-
-  const onFinish = (values) => {
+  const onFinish = (values:FormValueType) => {
     console.log("Success:", values);
     if (
       values.userName === account.userName &&
@@ -32,7 +33,7 @@ function LoginPage() {
       ]);
     }
   };
-  const onFinishFailed = (errorInfo) => {
+  const onFinishFailed = (errorInfo:any) => {
     console.log("Failed:", errorInfo);
   };
 
@@ -48,7 +49,6 @@ function LoginPage() {
       </div>
      
       <div className="form-container ">
-     
         <Form
           form={form}
           name="basic"
@@ -70,7 +70,7 @@ function LoginPage() {
               },
             ]}
           >
-            <Input />
+            <Input size="large"/>
           </Form.Item>
 
           <Form.Item
@@ -83,16 +83,16 @@ function LoginPage() {
               },
             ]}
           >
-            <Input.Password />
+            <Input.Password  size="large"/>
           </Form.Item>
 
           <Form.Item>
-            <Button className="btn-submit" type="primary" htmlType="submit">
+            <Button className="btn-submit" type="primary" htmlType="submit" size="large">
               Submit
             </Button>
           </Form.Item>
           <div className="register">
-            <Link to='/register'>Click for register</Link>
+            <Link id="hpl-register" test-id="hpl-register" to='/register' style={{color:"#019c50"}}>Click for register</Link>
           </div>
           
         </Form>

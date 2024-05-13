@@ -9,11 +9,12 @@ export default function RegisterLayout() {
         <>
           <Row justify="center" align="middle" style={{ margin: '2rem 1rem' }}>
             <Image
+              preview={false}
               width={"15%"}
               src={banner}
             />
           </Row>
-          <Row justify="center" align="middle" style={{ margin: '1rem 1rem' }}>
+          <Row justify="center" align="middle" style={{ margin: '1rem 1rem',paddingBottom: "40px" }}>
             <Col span={12}>
               <Outlet />
             </Col>

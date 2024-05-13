@@ -40,7 +40,7 @@ function RegisterForm() {
 					name="firstname"
 					rules={[{ required: true, message: 'Please input your first name!' }]}
 				>
-					<Input />
+					<Input  size="large"/>
 				</Form.Item>
 
 				<Form.Item<FieldType>
@@ -48,7 +48,7 @@ function RegisterForm() {
 					name="lastname"
 					rules={[{ required: true, message: 'Please input your last name!' }]}
 				>
-					<Input />
+					<Input size="large"/>
 				</Form.Item>
 
 				<Form.Item<FieldType>
@@ -56,9 +56,9 @@ function RegisterForm() {
 					name="gender"
 					rules={[{ required: true, message: 'Please input your gender!' }]}
 				>
-					<Radio.Group>
-						<Radio value="Male"> Male </Radio>
-						<Radio value="Female"> Female </Radio>
+					<Radio.Group >
+						<Radio value="Male"style={{fontSize:'16px'}} > Male </Radio>
+						<Radio value="Female" style={{fontSize:'16px'}}> Female </Radio>
 					</Radio.Group>
 				</Form.Item>
 
@@ -67,7 +67,7 @@ function RegisterForm() {
 					name="membershipType"
 					rules={[{ required: true, message: 'Please select your membership type!' }]}
 				>
-					<Select data-cy="membershipType" options={[
+					<Select id="membership-type" test-id="membership-type" size="large" options={[
 						{
 							label: 'Silver',
 							value: 'Silver'
@@ -104,6 +104,7 @@ function RegisterForm() {
 					<Button type="primary" htmlType="submit"
 					id="register_submit"
 					style={{width:'100%'}}
+					size="large"
 					>
 						Submit
 					</Button>
