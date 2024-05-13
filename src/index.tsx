@@ -3,41 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom';
-import RegisterForm from './RegisterForm';
-import RegisterResult from './RegisterResult';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/form",
-        element: <RegisterForm />,
-      },
-      {
-        path: "/result",
-        element: <RegisterResult />,
-      },
-      {
-        path: "/",
-        element: <Navigate to="/form" />
-      },
-      {
-        path: "*",
-        element: <Navigate to="/form" />
-      }
-    ]
-  },
-]);
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+   <App />
   </React.StrictMode>
 );
 

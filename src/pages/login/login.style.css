@@ -1,0 +1,65 @@
+.login-wrapper {
+    display: flex;
+    width: 100vw;
+    background-image: url('../../assets/cj-frame.png');
+    background-color: #00763c;
+    background-size: 95% 100%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 769px) {
+    .login-wrapper {
+        display: block;
+    }
+}
+
+.login-wrapper .App {
+    width: 50%;
+}
+
+@media screen and (max-width: 769px) {
+    .login-wrapper .App {
+        display: none;
+    }
+}
+
+.login-wrapper .form-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 769px) {
+    .login-wrapper .form-container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.login-wrapper .form-container .ant-form {
+    width: 80%;
+}
+
+.login-wrapper .form-container .ant-input {
+    height: 42px;
+}
+
+.login-wrapper .form-container .ant-input-affix-wrapper>input.ant-input {
+    height: 32px;
+}
+
+.login-wrapper .form-container .btn-submit {
+    display: table;
+    width: 100%;
+    max-width: 200px;
+    height: 42px;
+    margin: 0px auto;
+}
+
+.login-wrapper .form-container .register {
+    text-align: center;
+}

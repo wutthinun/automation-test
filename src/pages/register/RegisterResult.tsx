@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { FieldType } from "./model";
 import { Button, Descriptions } from "antd";
 import { useNavigate } from "react-router-dom";
+
+import { FieldType } from "../../model";
 
 function RegisterResult() {
     const [data, setData] = useState<FieldType | null>(null);
@@ -25,7 +26,7 @@ function RegisterResult() {
 
             <Button block onClick={() => {
                 navigate('/form');
-            }}>Back</Button>
+            }}>Login</Button>
         </>
     );
 }
