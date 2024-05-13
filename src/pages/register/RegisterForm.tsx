@@ -17,7 +17,7 @@ function RegisterForm() {
 
     const onFinish: FormProps<FieldType>['onFinish'] = (values: FieldType) => {
         localStorage.setItem('data', JSON.stringify(values));
-        navigate('/register-result');
+        navigate('/register/result');
     };
 
     const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = (errorInfo: any) => {

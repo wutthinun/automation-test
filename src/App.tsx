@@ -13,9 +13,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/" element={<RegisterLayout />}>
-          <Route path="register" element={<RegisterForm />} />
-          <Route path="register-result" element={<RegisterResult />} />
+        <Route path="/register" element={<RegisterLayout />}>
+          <Route index element={<RegisterForm />} />
+          <Route path="result" element={<RegisterResult />} />
         </Route>
       
         <Route path="/home/:name" element={<HomePage />} />

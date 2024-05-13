@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Required
 
 #### `node 18 or upper`
+download node this link => [https://nodejs.org/en/download](https://nodejs.org/en/download)
 
 # Before start
 
