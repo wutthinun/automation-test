@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Required
+
+### `node 18 or upper`
+
 ## Before start
 
 ### `npm install`
