@@ -36,11 +36,27 @@ function RegisterForm() {
 				autoComplete="off"
 			>
 				<Form.Item<FieldType>
+					label="User name"
+					name="username"
+					rules={[{ required: true, message: 'Please input your first name!' }]}
+				>
+					<Input id="username" test-id="username" size="large"/>
+				</Form.Item>
+
+				<Form.Item<FieldType>
+					label="Password"
+					name="password"
+					rules={[{ required: true, message: 'Please input your first name!' }]}
+				>
+					<Input.Password id="password" test-id="password" size="large"/>
+				</Form.Item>
+
+				<Form.Item<FieldType>
 					label="First name"
 					name="firstname"
 					rules={[{ required: true, message: 'Please input your first name!' }]}
 				>
-					<Input  size="large"/>
+					<Input id="firstname" test-id="firstname" size="large"/>
 				</Form.Item>
 
 				<Form.Item<FieldType>
@@ -48,7 +64,7 @@ function RegisterForm() {
 					name="lastname"
 					rules={[{ required: true, message: 'Please input your last name!' }]}
 				>
-					<Input size="large"/>
+					<Input id="lastname" test-id="lastname" size="large"/>
 				</Form.Item>
 
 				<Form.Item<FieldType>
@@ -57,8 +73,8 @@ function RegisterForm() {
 					rules={[{ required: true, message: 'Please input your gender!' }]}
 				>
 					<Radio.Group >
-						<Radio value="Male"style={{fontSize:'16px'}} > Male </Radio>
-						<Radio value="Female" style={{fontSize:'16px'}}> Female </Radio>
+						<Radio id="gender-male" test-id="gender-male" value="Male"style={{fontSize:'16px'}} > Male </Radio>
+						<Radio id="gender-female" test-id="gender-female" value="Female" style={{fontSize:'16px'}}> Female </Radio>
 					</Radio.Group>
 				</Form.Item>
 
@@ -97,12 +113,13 @@ function RegisterForm() {
 						},}
 					]}
 				>
-					<Checkbox>I agree to the terms and conditions</Checkbox>
+					<Checkbox id="terms-cons" test-id="terms-cons">I agree to the terms and conditions</Checkbox>
 				</Form.Item>
 
 				<Form.Item >
 					<Button type="primary" htmlType="submit"
-					id="register_submit"
+					id="register-submit"
+					test-id="register-submit"
 					style={{width:'100%'}}
 					size="large"
 					>

@@ -70,7 +70,7 @@ function LoginPage() {
               },
             ]}
           >
-            <Input size="large"/>
+            <Input id="username" test-id="username" size="large"/>
           </Form.Item>
 
           <Form.Item
@@ -83,11 +83,11 @@ function LoginPage() {
               },
             ]}
           >
-            <Input.Password  size="large"/>
+            <Input.Password  id="password" test-id="password" size="large"/>
           </Form.Item>
 
           <Form.Item>
-            <Button className="btn-submit" type="primary" htmlType="submit" size="large">
+            <Button className="btn-submit" type="primary" htmlType="submit" size="large" id="btn-submit" test-id="btn-submit">
               Submit
             </Button>
           </Form.Item>

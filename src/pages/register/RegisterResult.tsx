@@ -24,7 +24,11 @@ function RegisterResult() {
                 <Descriptions.Item label="Terms and Conditions">{data?.tnc ? 'Agree' : 'Disagree'}</Descriptions.Item>
             </Descriptions>
 
-            <Button block onClick={() => {
+            <Button 
+            block 
+            id="goto-login"
+			test-id="goto-login"
+            onClick={() => {
                 navigate('/form');
             }}>Login</Button>
         </>

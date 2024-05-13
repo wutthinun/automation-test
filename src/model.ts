@@ -1,4 +1,6 @@
 type FieldType = {
+    username: string;
+    password: string;
     firstname: string;
     lastname: string;
     gender: 'Male' | 'Female';
